@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Open+Sans&display=swap');
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #251400;
+	background-size: cover;
+	background-image: url(https://solodental.ca/wp-content/uploads/2016/06/desktop-hd-black-orange-wallpaper-abstract.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 100px;
+	padding: 10% 8% 8% 8%;
+	border-radius: 50px;
+	border: 1px solid rgba(127, 127, 127, 0.5);
+	background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+
+	font-family: "open sans";
+	text-align: center;
+	color: #ffffff;
+}
+
+body>p::before {
+	transform: translateY(-100px);
+	content: "Cursed questions";
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+body>p::after {
+	content: "What is the capital of Paris?<div><a href=javascript:a(0)>P</a><a href=javascript:a(1)>France</a><a href=javascript:a(2)>ecnarF</a></div>;Can you tell me what 1+1 does?<div><a href=javascript:a(0)>2</a><a href=javascript:a(1)>Yes</a><a href=javascript:a(2)>No</a></div>;What does 2 and 5 evaluate to?<div><a href=javascript:a(0)>7</a><a href=javascript:a(1)>5</a><a href=javascript:a(2)>true</a></div>;Are you lying?<div><a href=javascript:a(0)>Yes</a><a href=javascript:a(1)>Answer a) is a paradox</a><a href=javascript:a(2)>Answer a)</a></div>;What number am I thinking about?<div><a href=javascript:a(0)>69</a><a href=javascript:a(1)>42</a><a href=javascript:a(2)>Any other</a></div>;Heads or tails?<div><a href=javascript:a(0)>Either of them</a><a href=javascript:a(1)>Qubit</a><a href=javascript:a(2)>Not the slice</a></div>;What is recursion?<div><a href=javascript:a(0)>Answer a)</a><a href=javascript:a(1)>Answer c)</a><a href=javascript:a(2)>Answer b)</a></div>;Pick a letter.<div><a href=javascript:a(0)>`choice([chr(97+i) for i in range(26)])`</a><a href=javascript:a(1)>`chr(randint(97,122))`</a><a href=javascript:a(2)>`'abcdefghijklmnopqrstuvwxyz'[int(random()*26)]`</a></div>;What?<div><a href=javascript:a(0)>Nothing</a><a href=javascript:a(1)>Asked</a><a href=javascript:a(2)>Nuts</a></div>;Pick a title for this question<div><a href=javascript:a(0)>Recursion</a><a href=javascript:a(1)>Answer b) is false</a><a href=javascript:a(2)>Pick a title for this question</a></div>;Which word has been said more than a million times in history?<div><a href=javascript:a(0)>Google</a><a href=javascript:a(1)>forgor</a><a href=javascript:a(2)>botos</a></div>;Which is more sustainable?<div><a href=javascript:a(0)>Impostor</a><a href=javascript:a(1)>Sus</a><a href=javascript:a(2)>Amongus</a></div>;What is Beluga?<div><a href=javascript:a(0)>A man</a><a href=javascript:a(1)>A cat</a><a href=javascript:a(2)>A whale</a></div>;Which question is most absurd?<div><a href=javascript:a(0)>Say that again?</a><a href=javascript:a(1)>What do you mean?</a><a href=javascript:a(2)>Noot Noot</a></div>;What did you say yesterday?<div><a href=javascript:a(0)>,</a><a href=javascript:a(1)>.</a><a href=javascript:a(2)>'</a></div>;Test results<br>You are: <span>A% air, B% bee, C% sea.</span><div><a href='.'>Try again</a></div>";
+	display: none;
+}
+
+body>p {
+	margin-top: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+body>p>div, body>p>span {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+body>p>div>a {
+	border: 1px solid rgba(200, 200, 200, 0.4);
+	background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition-duration: 0.4s;
+	transition-property: border background-color;
+
+	min-width: 200px;
+	padding: 10px;
+	border-radius: 30px;
+
+	color: #202100;
+	text-decoration: none;
+}
+
+body>p>div>a:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}

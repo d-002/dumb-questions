@@ -1,0 +1,1 @@
+let I=0,q,s=[0,0,0],a=i=>{s[i]++;I||(q=window.getComputedStyle(document.body.children[0],"::after").content.replaceAll('"',"").split(";"));document.body.children[0].innerHTML=(I==q.length-1&&function(){for(i=0;i<3;i++)q[I]=q[I].replace("ABC"[i],s[i]*6.6)}(),q[I++])};
