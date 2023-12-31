@@ -8,11 +8,17 @@ html {
     background-image: url(https://solodental.ca/wp-content/uploads/2016/06/desktop-hd-black-orange-wallpaper-abstract.jpg);
     background-position: center;
     background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
 }
 
 body {
-    margin: 100px;
-    padding: 10% 8% 8% 8%;
+    margin: 100px 0;
+	max-width: 1200px;
+	min-height: 600px;
+    padding: 100px;
+	padding-top: 120px;
     border-radius: 50px;
     border: 1px solid rgba(127, 127, 127, 0.5);
     background-color: rgba(255, 255, 255, 0.2);
@@ -58,7 +64,7 @@ body>p>div>a {
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition-duration: 0.4s;
-    transition-property: border background-color;
+    transition-property: border, background-color;
 
     min-width: 200px;
     padding: 10px;
@@ -71,4 +77,34 @@ body>p>div>a {
 body>p>div>a:hover {
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+body>p>div>a:nth-child(2)::after {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 200px);
+	font-size: 25px;
+	content: "Explanation";
+	display: block;
+}
+
+body>p>div::after {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
+	padding: 40px 70px;
+	border-radius: 50px;
+	text-align: justify;
+
+	content: "This website has been created as a dumb joke, but also as an attempt at containing the minimum amount of HTML/JavaScript, and the most CSS possible. The .css file is not redundant and its formatting is as I would have usually done it. Thus, you can press Ctrl+U and see that the file used to generate this website is minuscule. Furthermore, most of the data is stored in the CSS file, for example the HTML file does not contain any of the text that is displayed here, nor does the JavaScript script used contain the above questions.";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+
+	margin: 50px;
+	margin-bottom: 20px;
+
+    font-size: 14px;
+	font-weight: normal;
 }
