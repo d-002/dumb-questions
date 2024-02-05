@@ -85,8 +85,10 @@ body>p>div>a:nth-child(2)::after {
 	left: 50%;
 	transform: translate(-50%, 200px);
 	font-size: 25px;
-	content: "Explanation";
+	content: "/!\ This might not work on all browsers!";
 	display: block;
+	width: 1000%;
+	color: black;
 }
 
 body>p>div::after {
