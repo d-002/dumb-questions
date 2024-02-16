@@ -1,1 +1,1 @@
-let I=0,s=[0,0,0],a=i=>{b=document.body.children[0];s[i]++;I|(q=window.getComputedStyle(b,":after").content.slice(1,-1).split(";"));b.innerHTML=(I==q.length-1&(()=>{for(i=0;i<3;i++)q[I]=q[I].replace("ABC"[i],parseInt(s[i]*6.6))})(),q[I++])};a()
+let I=0,s=[0,0,0],a=i=>{b=document.body.children[0];s[i]++;I|(q=window.getComputedStyle(b,":after").content.slice(1,-1).split(";"));b.innerHTML=(I==q.length-1&(()=>{for(i=0;i++<3;)q[I]=q[I].replace("ABC"[i],parseInt(s[i]*6.6))})(),q[I++])};a()
