@@ -83,9 +83,9 @@ body>p>div>a:nth-child(2)::after {
 	position: fixed;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, 200px);
+	transform: translate(-50%, 190px);
 	font-size: 25px;
-	content: "/!\ This might not work on all browsers!";
+	content: "/!\\ This might not work on all browsers!";
 	display: block;
 	width: 1000%;
 	color: black;
