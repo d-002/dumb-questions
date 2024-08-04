@@ -9,16 +9,16 @@ html {
     background-position: center;
     background-attachment: fixed;
 
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 body {
     margin: 100px 0;
-	max-width: 1200px;
-	min-height: 600px;
+    max-width: 1200px;
+    min-height: 600px;
     padding: 100px;
-	padding-top: 120px;
+    padding-top: 120px;
     border-radius: 50px;
     border: 1px solid rgba(127, 127, 127, 0.5);
     background-color: rgba(255, 255, 255, 0.2);
@@ -80,33 +80,33 @@ body>p>div>a:hover {
 }
 
 body>p>div>a:nth-child(2)::after {
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, 190px);
-	font-size: 25px;
-	content: "/!\\ This might not work on all browsers!";
-	display: block;
-	width: 1000%;
-	color: black;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 190px);
+    font-size: 25px;
+    content: "/!\\ This might not work on all browsers!";
+    display: block;
+    width: 1000%;
+    color: black;
 }
 
 body>p>div::after {
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(0, 0, 0, 0.1);
-	padding: 40px 70px;
-	border-radius: 50px;
-	text-align: justify;
+    padding: 40px 70px;
+    border-radius: 50px;
+    text-align: justify;
 
-	content: "This website has been created, first, as a dumb joke, but also as an attempt at making a page containing the strict minimum amount of HTML and JavaScript, but the most CSS possible. Of course, the .css file is not redundant, and its formatting is as I would have usually done it for, say, another, more serious project. Thus, you can press Ctrl + U and see that the HTML file used to generate this website is minuscule. To achieve this, most of the data, like questions, is stored in the CSS file: as a result, the HTML file does not contain any of the text that is displayed here, and the JavaScript code used does not contain the questions above either.";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: block;
+    content: "This website has been created, first, as a dumb joke, but also as an attempt at making a page containing the strict minimum amount of HTML and JavaScript, but the most CSS possible. Of course, the .css file is not redundant, and its formatting is as I would have usually done it for, say, another, more serious project. Thus, you can press Ctrl + U and see that the HTML file used to generate this website is minuscule. To achieve this, most of the data, like questions, is stored in the CSS file: as a result, the HTML file does not contain any of the text that is displayed here, and the JavaScript code used does not contain the questions above either.";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
 
-	margin: 50px;
-	margin-bottom: 20px;
+    margin: 50px;
+    margin-bottom: 20px;
 
     font-size: 14px;
-	font-weight: normal;
+    font-weight: normal;
 }
