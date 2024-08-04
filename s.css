@@ -11,16 +11,21 @@ html {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 body {
     margin: 100px 0;
-    max-width: 1200px;
-    min-height: 600px;
     padding: 100px;
-    padding-top: 120px;
+    padding-top: 80px;
+
+    min-height: 600px;
+    max-width: min(1200px, calc(100% - 200px));
+    box-sizing: border-box;
+
     border-radius: 50px;
     border: 1px solid rgba(127, 127, 127, 0.5);
+
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
@@ -59,16 +64,18 @@ body>p>div, body>p>span {
 }
 
 body>p>div>a {
-    border: 1px solid rgba(200, 200, 200, 0.4);
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition-duration: 0.4s;
     transition-property: border, background-color;
 
     min-width: 200px;
+
     padding: 10px;
     border-radius: 30px;
+    border: 1px solid rgba(200, 200, 200, 0.4);
+
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     color: #202100;
     text-decoration: none;
@@ -80,15 +87,19 @@ body>p>div>a:hover {
 }
 
 body>p>div>a:nth-child(2)::after {
+    content: "/!\\ This might not work on all browsers!";
+
     position: fixed;
+    display: block;
+    transform: translate(-50%, 80px);
+
     top: 0;
     left: 50%;
-    transform: translate(-50%, 190px);
-    font-size: 25px;
-    content: "/!\\ This might not work on all browsers!";
-    display: block;
+
     width: 1000%;
     color: black;
+
+    font-size: 22px;
 }
 
 body>p>div::after {
@@ -109,4 +120,5 @@ body>p>div::after {
 
     font-size: 14px;
     font-weight: normal;
+    line-height: 150%;
 }
