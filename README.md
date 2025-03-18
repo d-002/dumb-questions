@@ -1,5 +1,5 @@
 # dumb-questions
-Dumb questions. Made to have as little html/js and mostly css.
+Dumb questions. This website's code is 99% CSS, according to the stats.
 
 ## [Go to webpage](https://d-002.github.io/dumb-questions/)
 
