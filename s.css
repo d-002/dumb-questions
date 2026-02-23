@@ -97,7 +97,7 @@ body>p>div>a:nth-child(2)::after {
     top: 0;
     left: 50%;
 
-    width: 1000%;
+    width: 100vw;
     color: black;
 
     font-size: 22px;
